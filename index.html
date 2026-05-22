@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My First Web Page</title>
-        <style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>My First Web Page</title>
+    <style>
+        .skills-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.skill-card {
+    background-color: #e94560;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+        .hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
     body {
         background-color: #1a1a2e;
         color: white;
-        font-family: Arial, sans-serif;
+        font-family: 'Poppins', sans-serif;
         padding: 40px;
     }
 
@@ -19,30 +47,64 @@
     }
     a {
         color: #f00d4ff;
+    }
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0f0f1a;
+    position: sticky;
+    top: 0;
+}
 
-       </style>
-    
+.nav-name {
+    color: #e94560;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #e94560;
+}
+       </style> 
     </head>
     <body>
-         <h1>Hello I am Ebrahim!</h1>
-         <p>I am a Photographer, Videographer and UI/UX Designer.</p>
-         <h2>My Skills</h2>
-         <p>Photographer & Videographer</p>
-         <p>Figma & Adobe XD</p>
+        <nav>
+    <div class="nav-name">Ebrahim Selvaraj</div>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
+    </div>
+    </nav>
+        <div class="hero">
+        <img src="photo.jpeg" alt="My Photo" width="200">
+        <div class="hero-text">
+            <h1>Hello I am Ebrahim!</h1>
+            <p>I am a Photographer, Videographer and UI/UX Designer.</p>
+    </div>
+</div>
+        <h2>My Skills</h2>
+<div class="skills-container">
+    <div class="skill-card">Photography</div>
+    <div class="skill-card">Videography</div>
+    <div class="skill-card">UI/UX Design</div>
+    <div class="skill-card">Video Editing</div>
+    <div class="skill-card">Figma & Adobe XD</div>
+    <div class="skill-card">Premiere Pro</div>
+</div>
          <h2>My Links</h2>
          <a href="https://ebrahimselvarajportfolio.netlify.app/">Visit My Website</a>
-         <br>
-         <img src="photo.jpeg" alt="My Photo" width="200">
-         <br>
 
-       <ul>
-     <li>Photography</li>
-     <li>Videography</li>
-     <li>UI/UX Design</li>
-     <li>Video Editing</li>
-</ul>
-
-<h1>Hello, Blessing Benith🙋‍♂️</h1>
+<h1>Hello, Beni🙋‍♂️</h1>
 <h2>This is Made with❤️ for you Thangamae 😘</h2>
   </body>
 </html>
